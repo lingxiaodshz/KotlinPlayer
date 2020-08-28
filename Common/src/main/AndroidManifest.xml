@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lingxiao.kotlin.player.media">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application>
+        <receiver android:name="androidx.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".library.AlbumArtContentProvider"
+            android:authorities="com.example.android.uamp.media.com.lingxiao.kotlin.player.media.library.provider"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>
