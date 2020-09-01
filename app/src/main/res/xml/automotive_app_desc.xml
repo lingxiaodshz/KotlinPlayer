@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright 2017 Google Inc. All rights reserved.
+  ~ Copyright 2018 Google Inc. All rights reserved.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -14,10 +14,10 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.android.uamp.MainActivity"
-    android:id="@+id/fragmentContainer" />
+<automotiveApp>
+  <!--
+    ~ This lets Android Auto know that UAMP can act as a media app.
+    ~ See: https://developer.android.com/training/auto/audio/ for more info.
+    -->
+  <uses name="media"/>
+</automotiveApp>
